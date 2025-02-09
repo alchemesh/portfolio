@@ -1,0 +1,1169 @@
+body.has-active-overlaypanel-selector {
+    overflow-y: hidden;
+}
+
+.container-container {
+        width:90%;
+        margin-left:auto;
+        margin-right:auto;
+        max-width: none;
+}
+
+
+
+button, input[type="submit"] {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+    color: #777;
+    background-color: #2fff05;
+    border-color: transparent;
+    padding: 8px 16px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 0;
+
+
+}
+
+button:hover {
+        opacity:.8
+}
+
+.fullpage {
+        width:100%;
+        height:auto;
+        font-family: Gotham SSm,sans-serif;
+
+}
+
+.fullpage.home::before {
+	content: '';
+	position:fixed;
+	//position:absolute;
+	z-index:-1;
+	width:100%;
+	//height:100%;
+	min-height:100%;
+	top:0;
+	left:0;
+	background-image:url("/images/overlay.png"), url("/images/websiteimage_home1.jpg");
+	background-size:100vw 100vh;
+	will-change:transform;
+}
+
+
+.header {
+        //position:relative;
+        //position:absolute;
+        z-index:15;
+        padding: 20px 5vw 0;
+        left:0;
+        //right:0;
+        top: 0;
+	//padding-top: 40px;
+
+}
+
+
+
+.header .headercontent {
+        padding-top:30px;
+        //border:1px solid blue;
+	//-webkit-justify-content: flex-start;
+	//-ms-flex-pack: start;
+	//justify-content: flex-start;
+        
+        //margin: auto;
+        //text-align: left;
+        //display: -webkit-flex;
+        //display: -ms-flexbox;
+        //display: flex;
+        //-webkit-flex-flow: row nowrap;
+        //-ms-flex-flow: row nowrap;
+        //flex-flow: row;
+        //-webkit-justify-content: space-between;
+        //-ms-flex-pack: justify;
+        //justify-content: space-between;
+        //-webkit-align-items: flex-start;
+        //-ms-flex-align: start;
+        //align-items: flex-start;
+
+}
+
+
+
+.header .headerlogo {
+        -webkit-flex-basis: 70px;
+        -ms-flex-preferred-size: 70px;
+        flex-basis: 70px;
+        height: 55px;
+        //text-align: left;
+        //margin: 0;
+
+        
+}
+
+.header .headerlogo a {
+        //height: 100%;
+        //width: auto;
+        //display: block;
+        //padding: 0;
+
+}
+
+.header .headerlogo a:hover {
+        text-decoration:none;
+}
+
+
+.header .headerfulllogo {
+        
+}
+
+
+.header .headerlogodesktop {
+	display:none;
+}
+
+.header .headerlogomobile {
+	display:block;
+
+}
+
+
+.header .headerlogoimg {
+        //max-width:100%;
+        //height:100%;
+}
+
+
+.header .headermenu {
+	transition-delay: 0ms;
+	//text-align: left;
+	opacity: 1;
+	//display: block;
+	//margin: 0;
+}
+
+.header .headermenucontainer {
+}
+
+.header .headermenucontainer ul {
+        //list-style: none;
+        //margin: 0;
+        //padding: 0;
+        //display: inline-block;
+}
+
+.header .headermenuinner {
+        display:inline-block;
+        //position:relative;
+        text-align:center;
+	margin: 0 .5em;
+        //padding: 0% .5%;
+}
+
+
+.header .headermenuinner a span {
+        color:#e8e8e8;
+        font-family: Gotham SSm,sans-serif;
+        font-size: 10px;
+}
+
+.header .headermenuinner a:hover {
+        text-decoration:none;
+}
+
+.header .headermenuinner a:hover span {
+        color:#2fff05;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 776px) {
+	.header .headerlogomobile{display: none;}
+	.header .headerlogodesktop{display: block;}
+	.header .headermenuinner {margin: 0 1em;}
+	.header .headermenuinner a span { font-size: 12px; }	
+}
+
+
+@media screen and (min-width: 990px) {
+	.header .headermenuinner {margin: 0 2em;}
+        .header .headermenuinner a span { font-size: 14px; }
+
+}
+
+
+
+
+
+
+
+
+.journeyJS, .aboutMe, .contact, .template, .modeling, .projects, .fullview {
+        display:block;
+	//overflow-x:hidden;
+}
+
+
+.journeyJS .topimageroll, .contact .topimageroll {
+        height: 93vh;
+        position:relative;
+
+        z-index:10;
+        visibility: visible;
+        opacity: 1; 
+
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden; 
+        background-color: rgba(0,0,0,.07);
+        color: #fff;
+
+        min-height: 30vh;
+       
+        transition: opacity .2s ease;
+}
+
+.aboutMe .topimageroll, .template .topimageroll, .modeling .topimageroll, .projects .topimageroll, .fullview .topimageroll {
+        min-height: 300px;
+        width: 100%;
+        max-width: 100%;
+        
+        position: relative;
+        display: block;
+        overflow-x: hidden;
+        overflow-y: hidden;
+
+}
+
+
+
+.journeyJS .topimagecontainer {
+
+
+
+}
+
+
+.journeyJS .topimageview, .contact .topimageview {
+
+}
+
+.journeyJS .topimageview.is-active {
+        opacity:1;
+        visibility:visible;
+        transition-delay:0s
+}
+
+.journeyJS .topimageview::after, .journeyJS .topimageview::before, .contact .topimageview::after, .contact .topimageview::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+}
+
+.journeyJS .topimageviewinner, .contact .topimageviewinner {
+        opacity: 0;
+        transition: opacity .5s ease;  
+        background-position: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width:100%;
+        height:100%;
+        top: 0;
+        left: 0;
+        display: block;
+        position: absolute;
+}
+
+.journeyJS .topimageviewinner {
+	background-image: url("../images/websiteimage_home1.jpg");
+}
+
+.contact .topimageviewinner {
+        background-image: url("../images/google-map-new-infrared.jpg");        
+}
+
+
+.journeyJS .topimageviewinner.is-loaded, .contact .topimageviewinner.is-loaded {
+        opacity: 1;
+}
+
+
+.journeyJS .topimageviewimage, .contact .topimageviewimage {
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+
+.journeyJS .topimageviewunderlay, .aboutMe .topimageviewunderlay {
+	width:100%;
+	height:100%;
+	position:absolute;
+	z-index:1;
+	top: 0;
+        left: 0;
+}
+
+
+
+.journeyJS .topimageviewunderlay-inner {
+	padding-top:170px;
+	
+}
+
+.aboutMe .topimageviewunderlay-inner {
+        padding-top:135px;
+	
+	
+}
+
+
+.journeyJS .topimageviewunderlay-transparent, .aboutMe .topimageviewunderlay-transparent {
+        //padding-top:100px;
+	height: 250px;
+	background-color: rgba(0,0,0,.75);
+}
+
+.aboutMe .topimageviewunderlay-transparent {
+	height: 75px;
+}
+
+
+.journeyJS .topimageviewoverlay, .aboutMe .topimageviewoverlay {
+        width:100%;
+        height:100%;
+        position:absolute;
+        z-index:2;
+        top: 0;
+        left: 0;
+}
+
+.journeyJS .topimageviewoverlay-inner {
+	padding-top:120px;
+}
+
+.aboutMe .topimageviewoverlay-inner {
+        padding-top:100px;
+}
+
+.journeyJS .topimageviewoverlay-img {
+        width:189px;
+	height:500px;
+	right:0;
+	top:0;
+	margin-left:70%;
+}
+
+.aboutMe .topimageviewoverlay-img {
+	width:250px;
+        height:661px;
+        right:0;
+        top:0;
+	margin-left:50%;
+}
+
+.journeyJS .topimageviewoverlay-img img, .aboutMe .topimageviewoverlay-img img {
+	width:100%;
+	height:100%;
+}
+
+
+.journeyJS .topimageviewinnercontainer, .aboutMe .topimageviewinnercontainer, .contact .topimageviewinnercontainer {
+        padding-top:95px;
+        padding-left:5%;
+        z-index: 3;
+        position: relative;
+}
+
+/*
+.aboutMe .container-container {
+        width:90%;
+        margin-left:auto;
+        margin-right:auto;
+        max-width: none;
+}
+
+.journeyJS .container-container {
+        width:90%;
+        margin-left:auto;
+        margin-right:auto;
+        max-width: none;
+}
+*/
+
+.journeyJS .topinnercontainer, .contact .topinnercontainer {
+        //height: 55px;
+	-webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+
+        margin: auto;
+        text-align: left;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        padding-top:100px;
+}
+
+
+.journeyJS .topinnercontainercontent, .contact .topinnercontainercontent {
+	text-align: left;
+        margin: 0;
+        flex-basis: auto;
+        height:125px;
+	
+}
+
+.journeyJS .topinnercontainerimg {
+	height:100%;
+}
+
+.contact .topinnercontainer-heading {
+	
+}
+
+.contact .topinnercontainer-subheading {
+
+}
+
+.contact .topinnercontainer-heading span {
+	color:#e8e8e8;
+        font-family: Gotham SSm,sans-serif;
+        //font-size: 30px;
+}
+
+.contact .topinnercontainer-subheading span {
+	color:#e8e8e8;
+	font-weight:300;
+        font-family: Gotham SSm,sans-serif;
+        font-size: 30px;	
+}
+
+.contact .topinnercontainer-info {
+	//padding-top:25px;
+	position: absolute;
+	bottom:7%;
+	width:100%;
+	display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+}
+
+.contact .topinnercontainer-info-inner {
+	width:250px;
+	height:30px;
+	background-color: rgba(95,0,0,.55);	
+}
+
+.contact .topinnercontainer-info-subheading {
+	width:100%;
+        height:100%;
+        //text-align:center;
+	display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+}
+
+.contact .topinnercontainer-info-subheading span {
+	
+}
+
+
+/*
+.journeyJS .topimageroll .topinnerbutton, .journeyJS .banner .topinnerbutton {
+        padding-top:6%;
+}*/
+
+
+.journeyJS .topimageroll .topinnerbutton {
+        margin-top:25px;
+}
+
+.journeyJS .topinnerbutton .ui-btn {
+        //background-image: url(../images/newgreenbutton_tex1.jpg);
+	background-color: transparent;
+        background-position: 50%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        border:none;
+        color:#e8e8e8;
+        font-size:.90em;
+	//width:12em;
+        //height:35px;
+
+	padding:16px 32px;
+	
+
+}
+
+.journeyJS .banner .topinnerbutton .ui-btn {
+	background-color: #1c1c1c;
+}
+
+
+.journeyJS .topimageroll .topinnerbutton .ui-shadow {
+	-webkit-box-shadow: 0 8px 10px rgba(0,0,0,.55);
+        box-shadow: 0 8px 10px rgba(0,0,0,.55);
+
+        //box-shadow: 10px 10px 5px rgba(0,0,0,.55);
+}
+
+.journeyJS .banner .topinnerbutton .ui-shadow {
+	-webkit-box-shadow: 10px 5px 1px rgba(0,0,0,55);
+        box-shadow: 10px 10px 5px rgba(0,0,0,.55);
+
+}
+
+
+
+.journeyJS .topinnerbutton .ui-btn:hover {
+        font-size:.90em;
+        opacity:0.5;
+}
+
+.journeyJS .topimagearrow {
+        animation: upAndDown 2.5s linear infinite;
+        position: absolute;
+	z-index:3;
+        bottom: 6%;
+        left: 50%;
+        display: block;
+        width: 42px;
+        height: 22px;
+        margin-left: -21px;
+        background-image: url(../images/mycaret.png);
+        background-position: 50%;
+        background-repeat: no-repeat;
+}
+
+
+.journeyJS .topmenu {
+	position: fixed;
+	bottom: 5vh;
+	left: 20px;
+	display: inline-block;
+	//cursor: pointer;
+	z-index: 3;
+	box-sizing: border-box;
+	transition: all .2s ease;	
+	//border:1px solid green;	
+	width:100%;
+}
+
+.journeyJS .topmenu.is-scrolled {
+	opacity: 0 !important;
+	visibility: hidden !important;
+}
+
+
+.journeyJS .topmenuroll {
+        display:none;
+}
+
+.journeyJS .topmenurolldesk {
+        width:100%;
+        height:10vh;
+}
+
+.journeyJS .topmenurolldesk span {
+	font-size:.60em;
+}
+
+
+.journeyJS .topmenucontainer {
+        //text-align:center;
+        padding: 2.5vh 0%;
+        //border:1px solid green;
+        height:10vh;
+        position:relative;
+        z-index:1;
+        overflow-x:auto;
+}
+
+.journeyJS .topmenuinner {
+        display:inline-block;
+        padding: 0% 4%;
+}
+
+
+.aboutMe .topimageroll-carousel-images, .template .topimageroll-carousel-images, .modeling .topimageroll-carousel-images, .projects .topimageroll-carousel-images, .fullview .topimageroll-carousel-images {
+        background-color: #1c1c1c !important;
+        height: 100%;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: static;
+}
+
+.aboutMe .topimageroll-images, .template .topimageroll-images, .modeling .topimageroll-images, .projects .topimageroll-images, .fullview .topimageroll-images {
+       
+        background-color: #e2e2e2;
+}
+
+.aboutMe .topimageroll-image,  .template .topimageroll-image, .modeling .topimageroll-image, .projects .topimageroll-image, .fullview .topimageroll-image {
+        z-index: 1;
+        opacity: 0;
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        //transition: opacity 1s cubic-bezier(.694,.0482,.335,1),z-index 0ms linear 1s;
+}
+
+.aboutMe .topimageroll-image.about, .template .topimageroll-image.about, .modeling .topimageroll-image.about, .projects .topimageroll-image.about, .fullview .topimageroll-image.about {
+        background-image: url(../images/websiteimage_home1.jpg);
+}
+
+.aboutMe .topimageroll-image.template, .template .topimageroll-image.template, .modeling .topimageroll-image.template, .projects .topimageroll-image.template, .fullview .topimageroll-image.template {
+        background-image: url(myportfolioimages/backgroundtexture_new_use_overlay.jpg);
+}
+
+
+.aboutMe .topimageroll-image.modeling, .template .topimageroll-image.modeling, .modeling .topimageroll-image.modeling, .projects .topimageroll-image.modeling, .fullview .topimageroll-image.modeling {
+        background-image: url(myportfolioimages/backgroundtexture_new_use_overlay.jpg);
+}
+
+.aboutMe .topimageroll-image.projects, .template .topimageroll-image.projects, .modeling .topimageroll-image.projects, .projects .topimageroll-image.projects, .fullview .topimageroll-image.projects {
+        background-image: url(myportfolioimages/backgroundtexture_new_use_overlay.jpg);
+}
+
+.aboutMe .topimageroll-image.is-loaded, .template .topimageroll-image.is-loaded, .modeling .topimageroll-image.is-loaded, .projects .topimageroll-image.is-loaded, .fullview .topimageroll-image.is-loaded {
+        transition: opacity .3s cubic-bezier(.694,.0482,.335,1);
+        transition-delay: 0;
+}
+
+.aboutMe .topimageroll-image.is-active, .template .topimageroll-image.is-active, .modeling .topimageroll-image.is-active, .projects .topimageroll-image.is-active, .fullview .topimageroll-image.is-active {
+        opacity: 1;
+}
+
+.aboutMe .topimageroll-carousel-content, .template .topimageroll-carousel-content, .modeling .topimageroll-carousel-content, .projects .topimageroll-carousel-content, .fullview .topimageroll-carousel-content {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        text-align: center;
+        height: 100%;
+}
+
+.aboutMe .copy-carousel, .template .copy-carousel, .modeling .copy-carousel, .projects .copy-carousel, .fullview .copy-carousel {
+        width: 100%;
+        height: 100%;
+}
+
+.aboutMe .copy-carousel-slides, .template .copy-carousel-slides, .modeling .copy-carousel-slides, .projects .copy-carousel-slides, .fullview .copy-carousel-slides {
+        overflow-y: hidden;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        display: table;
+}
+
+.aboutMe .copy-carousel-slide, .template .copy-carousel-slide, .modeling .copy-carousel-slide, .projects .copy-carousel-slide, .fullview .copy-carousel-slide {
+        display: table-cell;
+        vertical-align: middle;
+        padding-top: 44px;
+	position: relative;
+        z-index: 3;
+}
+
+
+.aboutMe .topimageroll .carousel-slide-layout, .template .topimageroll .carousel-slide-layout, .modeling .topimageroll .carousel-slide-layout, .projects .topimageroll .carousel-slide-layout, .fullview .topimageroll .carousel-slide-layout {
+        margin-top: -12px;
+        padding: 0;
+        margin: auto;
+        text-align: left;
+        height:auto;
+        
+}
+
+.aboutMe .topimageroll .carousel-slide-layout > .carousel-slide-row, .template .topimageroll .carousel-slide-layout > .carousel-slide-row, .modeling .topimageroll .carousel-slide-layout > .carousel-slide-row, .projects .topimageroll .carousel-slide-layout > .carousel-slide-row, .fullview .topimageroll .carousel-slide-layout > .carousel-slide-row {
+        padding: 0 15%;
+}
+
+
+.aboutMe .carousel-slide-layout > .carousel-slide-row, .template .carousel-slide-layout > .carousel-slide-row, .modeling .carousel-slide-layout > .carousel-slide-row, .projects .carousel-slide-layout > .carousel-slide-row, .fullview .carousel-slide-layout > .carousel-slide-row {
+        margin-left: -17px;
+        margin-right: -17px;
+}
+
+
+.aboutMe .carousel-slide-row, .template .carousel-slide-row, .modeling .carousel-slide-row, .projects .carousel-slide-row, .fullview .carousel-slide-row {
+        
+        width: auto !important;
+}
+
+.aboutMe .carousel-slide-col-12, .template .carousel-slide-col-12, .modeling .carousel-slide-col-12, .projects .carousel-slide-col-12, .fullview .carousel-slide-col-12 {
+        width: 100%;
+}
+
+.aboutMe .carousel-slide-block, .template .carousel-slide-block, .modeling .carousel-slide-block, .projects .carousel-slide-block, .fullview .carousel-slide-block {
+        position: relative;
+        height: auto;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        outline: none;
+        box-shadow: inset 0 0 0 1px rgba(128,128,128,0);
+        -webkit-transition: box-shadow .2s ease-in-out;
+        -moz-transition: box-shadow .2s ease-in-out;
+        -o-transition: box-shadow .2s ease-in-out;
+        transition: box-shadow .2s ease-in-out;
+}
+
+.aboutMe .html-block, .template .html-block, .modeling .html-block, .projects .html-block, .fullview .html-block {
+        clear: none;
+}
+
+.aboutMe .carousel-block-html, .template .carousel-block-html, .modeling .carousel-block-html, .projects .carousel-block-html, .fullview .carousel-block-html {
+        padding: 0;
+}
+
+.aboutMe .carousel-slide-block-content, .template .carousel-slide-block-content, .modeling .carousel-slide-block-content, .projects .carousel-slide-block-content, .fullview .carousel-slide-block-content {
+        cursor: auto;
+        outline: none;
+        text-align: left;
+        text-transform: uppercase;
+}
+
+.aboutMe .carousel-slide-block-content-inner, .template .carousel-slide-block-content-inner, .modeling .carousel-slide-block-content-inner, .projects .carousel-slide-block-content-inner, .fullview .carousel-slide-block-content-inner {
+        text-align: left;
+        text-transform: uppercase;
+        line-height: 1.15em;
+        letter-spacing: .08em;
+        margin: .2em auto;
+}
+
+.aboutMe .carousel-slide-block-content-inner span, .template .carousel-slide-block-content-inner span, .modeling .carousel-slide-block-content-inner span, .projects .carousel-slide-block-content-inner span, .fullview .carousel-slide-block-content-inner span {
+        font-family: Gotham,sans-serif;
+        //font-size: 43px;
+        font-size: 26px;
+        font-weight: 500;
+        color: #fff;
+}
+
+
+.aboutMe .topimageroll-carousel-indicator, .template .topimageroll-carousel-indicator {
+
+}
+
+.toprollmenu {
+	position:relative;
+	z-index:10;
+	background-color:#fff;
+}
+
+
+
+
+/*******Account*********/
+.account-wrapper {
+        margin-left: -15px;
+        margin-right: -15px;
+        z-index: 1;
+	padding:20px 0px;
+
+}
+
+.account-navigation {
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 30px;
+        position: relative;
+        z-index: 10;
+        margin-top: 0;
+}
+
+.account-navigation .toggle-left-nav {
+    top: -34px;
+}
+.account-navigation .toggle-left-nav {
+    background: none;
+    border: none !important;
+    color: #000;
+    display: block;
+    outline: none !important;
+    padding: 0;
+    position: absolute;
+    right: 5px;
+    top: 0;
+    z-index: 5;
+}
+
+.account-navigation .toggle-left-nav span {
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 0;
+    border-color: transparent;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0,0);
+    font-size: 12px;
+    padding: 6px;
+}
+
+.account-navigation .side-nav ul {
+	padding: 0;
+}
+
+.account-navigation .side-nav ul li {
+    display: inline-block;
+    margin: 0 5px 5px 0;
+}
+
+.account-navigation .side-nav ul a {
+    color: #333;
+    //padding: 5px;
+}
+
+
+
+
+.account-content {
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 15px;
+    min-height: 350px;
+
+}
+
+.projects .account-content {
+	min-height:initial;
+}
+
+
+
+
+
+
+
+
+/*******Contact*********/
+
+.rn_Padding {
+        padding-top:40px;
+}
+
+.rn_ErrorMessage {
+    background: #FFFFFF;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 0.75em;
+    padding: 0.75em;
+}
+
+
+.rn_ErrorMessage a {
+    color: #000;
+}
+
+
+
+.rn_TextInput {
+    clear: both;
+    margin-bottom: 8px;
+}
+
+
+.rn_TextInput .rn_Label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.rn_Required, .rn_ErrorLabel {
+    color: #c31c24;
+}
+
+.rn_ScreenReaderOnly {
+    position: absolute;
+    height: 1px;
+    left: -10000px;
+    overflow: hidden;
+    top: auto;
+    width: 1px;
+}
+
+.rn_TextInput .rn_Text, .rn_TextInput .rn_Email, .rn_TextInput .rn_TextArea, .rn_TextInput .rn_Url {
+    width: 100%;
+    margin-bottom: 0.75em;
+}
+
+.rn_TextInput .rn_TextInputValidate {
+    margin-top: 8px;
+}
+
+.rn_FileAttachmentUpload {
+    margin-bottom: 8px;
+}
+
+
+.directContact {
+	margin-top:100px;
+	//margin-bottom:20px;
+}
+
+.contactinfo {
+	//color:#222;
+}
+
+.businessname span {
+	font-size:25px;
+	font-weight:600;
+}
+
+.businessaddress span {
+	font-size:18px;
+}
+
+.businessphone h5 {
+	font-weight:600;
+}
+
+.businessphone span {
+	font-size:16px;
+}
+
+.businessemail h5 {
+	font-weight:600;
+}
+
+.businessemail span {
+	font-size:16px;
+}
+
+.businessemail span span {
+        color:#2fff05;
+}
+
+
+
+.content-page {
+    border: 0;
+    width: 100%;
+    padding: 0;
+    color: #494949;
+    font-weight: normal;
+    margin: 8px 0 0 0;
+    font-family: "dcfont","Helvetica Neue","Helvetica",Arial,Segoe UI Symbol,sans-serif;
+}
+
+.content-page h2 {
+    font-size: 40px;
+    color: #494949;
+    padding: 25px 0;
+    font-family: "dcfont","Helvetica Neue","Helvetica",Arial,Segoe UI Symbol,sans-serif;
+    text-align: center;
+}
+
+.content-page h3 {
+    font-family: "dcfont","Helvetica Neue","Helvetica",Arial,Segoe UI Symbol,sans-serif;
+    padding: 20px 0 40px 0;
+    text-align: center;
+    font-size: 22px;
+}
+
+.content-page p {
+    font-size: 12px;
+}
+
+.content-page ul {
+    padding: 0;
+    font-size: 12px;
+}
+
+.content-page ul li {
+    display: list-item;
+    text-align: left;
+    padding-bottom: 18px;
+    font-size: 12px;
+    color: #2d2d2d;
+    margin-left: 25px;
+    list-style-type: disc;
+}
+
+.content-page ul li strong {
+    font-weight: normal;
+    font-style: normal;
+    font-family: "dcmediumfont","Helvetica Neue","Helvetica",Arial,Segoe UI Symbol,sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 525px) {
+        .journeyJS .topinnercontainercontent {height:150px;}
+
+	.aboutMe .topimageviewoverlay-inner {padding-top:80px;}
+	.aboutMe .topimageviewoverlay-img {width:280px;height:740px;margin-left:55%;}
+
+	.journeyJS .topimageroll .topinnerbutton {margin-top:35px;}
+        .journeyJS .topmenurolldesk span {font-size:.80em;}
+}
+
+
+
+@media screen and (min-width: 776px) {
+
+	.account-navigation {margin-top: 15px;}
+        .account-navigation .toggle-left-nav, .atc-navigation .toggle-left-nav {display: none;}
+        .account-navigation .side-nav ul li {display: block;font-size: 18px;}
+        .account-navigation .side-nav ul li a {background: none;color: #333;padding-bottom: 0;padding-top: 0;
+	}
+
+
+	.journeyJS .topinnercontainercontent {height:175px;}      
+	
+	
+	.aboutMe .topimageviewoverlay-img {width:310px;height:819px;margin-left:60%;}
+	
+	.journeyJS .topimageroll .topinnerbutton {margin-top:75px;}
+	.journeyJS .topmenurolldesk span {font-size:1.00em;}
+	.template .topimageroll .carousel-slide-layout {max-width: 768px;margin-top: -14px;}
+        .aboutMe .topimageroll .carousel-slide-layout > .carousel-slide-row, .template .topimageroll .carousel-slide-layout > .carousel-slide-row, .projects .topimageroll .carousel-slide-layout > .carousel-slide-row, .fullview .topimageroll .carousel-slide-layout > .carousel-slide-row {padding: 0 6%;}
+        .template .carousel-slide-block-content-inner {margin-bottom: 15px}
+        //.aboutMe .carousel-slide-block-content-inner span, .template .carousel-slide-block-content-inner span, .projects .carousel-slide-block-content-inner span {font-family: Gotham,sans-serif;font-size: 43px;}
+}
+
+
+@media screen and (min-width: 990px) {
+	.journeyJS .topinnercontainercontent {height:200px;}       
+
+	.aboutMe .topimageviewunderlay-inner {padding-top:183px;}
+	.aboutMe .topimageviewoverlay-img {margin-left:70%;}
+
+	.contact .topinnercontainer-info-inner {width:300px;}
+
+	.journeyJS .topimageroll .topinnerbutton {margin-top:100px;}
+	//.aboutMe .topimageroll, .template .topimageroll, .projects .topimageroll {min-height: 425px;}
+        .aboutMe .topimageroll .carousel-slide-layout, .template .topimageroll .carousel-slide-layout, .projects .topimageroll .carousel-slide-layout, .fullview .topimageroll .carousel-slide-layout {max-width: 1024px;}
+	.aboutMe .topimageroll .carousel-slide-layout {margin-top: -14px;}
+        .aboutMe .topimageroll .carousel-slide-layout > .carousel-slide-row, .template .topimageroll .carousel-slide-layout > .carousel-slide-row, .projects .topimageroll .carousel-slide-layout > .carousel-slide-row, .fulliew .topimageroll .carousel-slide-layout > .carousel-slide-row {padding: 0 9%;}
+
+	.aboutMe .carousel-slide-block-content-inner, .template .carousel-slide-block-content-inner, .contact .carousel-slide-block-content-inner, .modeling .carousel-slide-block-content-inner, .projects .carousel-slide-block-content-inner, .fullview .carousel-slide-block-content-inner {margin-bottom: 15px}
+}
+
+
+
+@media screen and (min-width: 1281px) {
+        .aboutMe .topimageroll .carousel-slide-layout, .template .topimageroll .carousel-slide-layout, .projects .topimageroll .carousel-slide-layout, .fullview .topimageroll .carousel-slide-layout {max-width: 1281px;}
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+.ui-btn {
+	margin: 0 !important;
+}
+
+.ui-mobile .ui-page-active {
+	overflow: initial;
+        overflow-x: initial;
+}
+
+.ui-content {
+        padding:0em;
+	overflow: initial;
+	overflow-x: initial;
+		
+}
+
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {
+        text-shadow:none;
+	color:none;
+}
+
+.ui-page-theme-a .ui-btn {
+        background-color:initial;
+        text-shadow:none;
+}
+
+.ui-page-theme-a .ui-btn:hover {
+        background-color:initial;
+
+}
+
+.ui-page-theme-a .ui-btn:focus {
+        box-shadow: 0 0 12px #24be0c;
+}
+
+.row {
+        margin-right: 0;
+        margin-left: 0;
+}

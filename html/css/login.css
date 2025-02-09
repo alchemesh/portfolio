@@ -1,0 +1,348 @@
+body {
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 14px;
+        line-height: 1.428571429;
+        color: #333;
+        background-color: #fff;
+}
+
+ul, h1, h2, h3, h4 {
+        margin:0;
+        padding:0;
+
+}
+
+h1, h2, h3, h4 {
+        //color: #666663;
+        font-family: 'Roboto', sans-serif;
+        //font-size: 15px;
+}
+
+strong {
+        font-weight: bold;
+}
+
+ul li {
+        list-style: none;
+}
+
+
+a {
+        -webkit-transition: 300ms;
+        -moz-transition: 300ms;
+        -o-transition: 300ms;
+        transition: 300ms;
+}
+
+a {
+        color: #fdb45e;
+}
+
+input[type="checkbox"], input[type="radio"] {
+        margin: 2px 0 0;
+        margin-top: 1px\9;
+        line-height: normal;
+        height:auto;
+}
+
+input[type="file"] {
+        padding:0;
+        height:auto;
+}
+
+input {
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        border-radius: 0;
+
+
+}
+
+
+input:focus {
+        border-color: #bbb;
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px #ccc;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px #ccc;
+}
+
+label {
+        display: inline-block;
+        max-width: 100%;
+        margin-bottom: 5px;
+}
+
+.form-group {
+        margin-bottom: 15px;
+}
+
+.form-group textarea, .form-group input[type="text"], .form-group input[type="password"], .form-group input[type="email"] {
+        display: block;
+        width: 100%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        border-radius: 0;
+}
+
+.form-group textarea:focus, .form-group input[type="text"]:focus, .form-group input[type="password"]:focus, .form-group input[type="email"]:focus {
+        border-color: #bbb;
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px #ccc;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px #ccc;
+        //box-shadow: 0px 0px 5px #fe980f;
+}
+
+.form-group.has-error .help-block {
+        color: #d40e04;
+}
+
+.form-group textarea {
+        height: auto;
+}
+
+.help-block {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #404040;
+}
+
+.alert-generic-wrapper {
+    clear: both;
+    padding: 12px 0;
+}
+
+.alert.danger {
+    background-color: #fc726b;
+    border-color: #fc5266;
+    color: #661802;
+}
+
+
+.form-actions {
+    padding: 10px 0;
+}
+
+.form-actions::before, .form-actions::after {
+    content: " ";
+    display: table;
+}
+
+.btn-signin {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    //padding: 6px 12px;
+	padding: 12px 40px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 0;
+    color: #fff;
+    background-color: initial;
+    border-color: transparent;
+    float: left;
+
+	-webkit-box-shadow: 0 8px 10px rgba(0,0,0,.55);
+        box-shadow: 0 8px 10px rgba(0,0,0,.55);
+
+	margin:0px 2px;
+}
+
+
+    
+
+
+
+
+
+
+
+
+/*******Login*********/
+
+.page-container {
+	height:100vh;
+	width:100%;
+	background-color:#222;
+	position:relative;
+	color:#444;
+}
+
+.page-container .modal {
+	top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        -ms-transform:translate(-50%,-50%);
+
+	right:initial;
+	bottom:initial;
+}
+
+.page-container .modal-content {
+	background-color: initial;
+	-webkit-background-clip: initial;
+	background-clip: initial;
+	border: none;
+	//border: none;
+	border-radius: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.page-container .modal-header {
+	border-bottom: 1px solid #444;
+}
+
+.page-container h4 {
+	color:#777;
+}
+
+.page-container #txtModalLoginEmail {
+	background-image: url("../images/usernameiconblack.png");
+	background-repeat: no-repeat;
+	background-position-y: 25%;		
+	background-position-x: 3%;
+}
+
+.page-container #txtModalLoginPassword {
+        background-image: url("../images/passwordconfirmicon.png");
+        background-repeat: no-repeat;
+        background-position-y: 25%;
+        background-position-x: 3%;
+}
+
+.page-container #txtModalLoginEmail:focus {
+	background-image:none;
+}
+
+
+
+
+.page-container #txtModalLoginPassword:focus {
+        background-image:none;
+}
+
+
+
+.page-container .form-group input[type="text"], .page-container .form-group input[type="password"] {
+	border-bottom: 1px solid #444;
+	background-color: initial;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+.page-container .actions {
+	height:70px;
+}
+
+.page-container .form-group .display-middle {
+	top:initial;
+	transform: translate(-50%, 0%);
+}
+
+/*
+.page-container #btnModalLogin {
+	background-color:#2fff05;
+}
+*/
+
+
+@media screen and (min-width: 768px) {
+	.page-container .modal-dialog { margin: initial; }
+}
+
+
+
+#login .social, #login .sewmuchmore, #modalLogin .social-login-wrapper, #modalLogin .sewmuchmore-login-wrapper, #modalLogin .social-register-wrapper, #modalLogin .sewmuchmore-register-wrapper {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+	padding-top:20px;
+}
+
+
+.double-wrapper {
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+}
+
+.double-wrapper .form-group {
+    min-height: 1px;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
+
+
+@media screen and (min-width: 768px) {
+	.double-wrapper .form-group {float: left;width: 50%;}
+}
+
+
+/*******LoginModal*********/
+
+.modal-title {
+    text-align: center;
+    font-size: 24px;
+}
+.modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+}
+
+#modalLogin p {
+    margin: 0 0 10px;
+        color:#000;
+}
+
+.account-login-options, .account-register-options {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.account-register-options .sewmuchmore-register-wrapper .form-wrapper {
+    margin-bottom: 15px;
+    max-height: 335px;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.account-register-options .sewmuchmore-register-wrapper label {
+    font-size: 11px;
+}
+
+
