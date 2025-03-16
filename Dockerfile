@@ -26,7 +26,7 @@ RUN apt-get update && apt-get install -y \
 
 
 COPY /html /var/www/html
-EXPOSE 80
+EXPOSE 80, 443
 
 
 ENTRYPOINT service apache2 restart && bash 
