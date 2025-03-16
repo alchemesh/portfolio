@@ -1,4 +1,5 @@
 var resizeId;
+var scrolling;
 
 
 $(window).resize(function() {
@@ -6,6 +7,74 @@ $(window).resize(function() {
         resizeId = setTimeout(templateGrid, 500);
 });
 
+$( window ).scroll(function() {
+        clearTimeout(scrolling);
+        scrolling = setTimeout(justScrolled, 5);
+
+});
+
+$( ".sideNav-button" ).click(function() {
+        var sideNavButtonName = $(this).html();
+
+        $( ".sideNav-button" ).removeClass("is-active");
+        $(this).addClass("is-active");
+        //console.log($(this).html());
+        
+        
+        var templateSelector = $(".template-selector[data-template-name='" + sideNavButtonName + "']").offset();
+        //var maincontent = $('.main-content').offset();
+
+        $("html, body").animate({scrollTop: templateSelector.top}, 1000);
+        //alert("Im here");
+});
+
+function justScrolled() {
+	var maincontent = $('.account-navigation').offset();
+        var toprollmenu = $('.toprollmenu').offset();
+	
+        if($( "html, body" ).scrollTop() > (toprollmenu.top + 70) || $( "body" ).scrollTop() > (toprollmenu.top + 70)) {
+                //alert($( "html, body" ).scrollTop());
+                //console.log(maincontent.top);
+                //console.log($( "html, body" ).scrollTop());
+                if(!$( '.account-navigation' ).hasClass("is-active")) {
+                        $( '.account-navigation' ).addClass("is-active");
+                        $( '.account-content-container' ).addClass("is-active");
+
+                }
+                else {
+                        var projects = $(".template-selector[data-template-name='Projects'").offset();
+                        var devops = $(".template-selector[data-template-name='DevOps'").offset();
+                        var webapps = $(".template-selector[data-template-name='Web Applications'").offset();
+
+                        if($( "html, body" ).scrollTop() >= projects.top - 100 && $( "html, body" ).scrollTop() <= (projects.top + $(".template-selector[data-template-name='Projects'").outerHeight() -50)) {
+                                $( ".sideNav-button" ).removeClass("is-active");
+                                $(".sideNav-button[title='Projects']").addClass("is-active");
+                        }
+                        else if($( "html, body" ).scrollTop() >= devops.top - 100 && $( "html, body" ).scrollTop() <= (devops.top + $(".template-selector[data-template-name='DevOps'").outerHeight() - 50)) {
+                                $( ".sideNav-button" ).removeClass("is-active");
+                                $(".sideNav-button[title='DevOps']").addClass("is-active");
+                        }
+                        else if($( "html, body" ).scrollTop() >= webapps.top - 100 && $( "html, body" ).scrollTop() < webapps.top + $(".template-selector[data-template-name='Web Applications'").outerHeight() - 50) {
+                                $( ".sideNav-button" ).removeClass("is-active");
+                                $(".sideNav-button[title='Web Applications']").addClass("is-active");
+                        }
+                        else {
+                                $( ".sideNav-button" ).removeClass("is-active");
+                        }
+                }
+        }
+
+        else {
+                if($( "html, body" ).scrollTop() < (toprollmenu.top + 70) || $( "body" ).scrollTop() < (toprollmenu.top + 70)) {
+                        //alert($( "html, body" ).scrollTop());
+                        //console.log(maincontent.top);
+                        //alert($( "html, body" ).scrollTop());
+                        //console.log(toprollmenu);
+                        $( '.account-navigation' ).removeClass("is-active");
+                        $( '.account-content-container' ).removeClass("is-active");
+                }
+        }
+}
 
 
 $(".template a[class='hover-trigger']").hover(function() {

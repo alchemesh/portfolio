@@ -2,6 +2,10 @@ body.has-active-overlaypanel-selector {
     overflow-y: hidden;
 }
 
+body.has-active-scrolllock {
+        overflow-y:hidden;
+}
+
 .container-container {
         width:90%;
         margin-left:auto;
@@ -41,10 +45,8 @@ button:hover {
 .fullpage.home::before {
 	content: '';
 	position:fixed;
-	//position:absolute;
 	z-index:-1;
 	width:100%;
-	//height:100%;
 	min-height:100%;
 	top:0;
 	left:0;
@@ -55,41 +57,16 @@ button:hover {
 
 
 .header {
-        //position:relative;
-        //position:absolute;
         z-index:15;
         padding: 20px 5vw 0;
         left:0;
-        //right:0;
         top: 0;
-	//padding-top: 40px;
-
 }
 
 
 
 .header .headercontent {
         padding-top:30px;
-        //border:1px solid blue;
-	//-webkit-justify-content: flex-start;
-	//-ms-flex-pack: start;
-	//justify-content: flex-start;
-        
-        //margin: auto;
-        //text-align: left;
-        //display: -webkit-flex;
-        //display: -ms-flexbox;
-        //display: flex;
-        //-webkit-flex-flow: row nowrap;
-        //-ms-flex-flow: row nowrap;
-        //flex-flow: row;
-        //-webkit-justify-content: space-between;
-        //-ms-flex-pack: justify;
-        //justify-content: space-between;
-        //-webkit-align-items: flex-start;
-        //-ms-flex-align: start;
-        //align-items: flex-start;
-
 }
 
 
@@ -98,18 +75,10 @@ button:hover {
         -webkit-flex-basis: 70px;
         -ms-flex-preferred-size: 70px;
         flex-basis: 70px;
-        height: 55px;
-        //text-align: left;
-        //margin: 0;
-
-        
+        height: 55px;  
 }
 
 .header .headerlogo a {
-        //height: 100%;
-        //width: auto;
-        //display: block;
-        //padding: 0;
 
 }
 
@@ -134,35 +103,25 @@ button:hover {
 
 
 .header .headerlogoimg {
-        //max-width:100%;
-        //height:100%;
 }
 
 
 .header .headermenu {
 	transition-delay: 0ms;
-	//text-align: left;
 	opacity: 1;
-	//display: block;
-	//margin: 0;
 }
 
 .header .headermenucontainer {
 }
 
 .header .headermenucontainer ul {
-        //list-style: none;
-        //margin: 0;
-        //padding: 0;
-        //display: inline-block;
+     
 }
 
 .header .headermenuinner {
         display:inline-block;
-        //position:relative;
         text-align:center;
 	margin: 0 .5em;
-        //padding: 0% .5%;
 }
 
 
@@ -186,7 +145,7 @@ button:hover {
 
 
 
-@media screen and (min-width: 776px) {
+@media screen and (min-width: 768px) {
 	.header .headerlogomobile{display: none;}
 	.header .headerlogodesktop{display: block;}
 	.header .headermenuinner {margin: 0 1em;}
@@ -207,31 +166,26 @@ button:hover {
 
 
 
-.journeyJS, .aboutMe, .contact, .template, .modeling, .projects, .fullview {
+.journeyJS, .aboutMe, .contact, .template, .modeling, .projects, .fullview, .devops {
         display:block;
-	//overflow-x:hidden;
 }
 
 
 .journeyJS .topimageroll, .contact .topimageroll {
         height: 93vh;
         position:relative;
-
         z-index:10;
         visibility: visible;
         opacity: 1; 
-
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden; 
         background-color: rgba(0,0,0,.07);
         color: #fff;
-
         min-height: 30vh;
-       
         transition: opacity .2s ease;
 }
 
-.aboutMe .topimageroll, .template .topimageroll, .modeling .topimageroll, .projects .topimageroll, .fullview .topimageroll {
+.aboutMe .topimageroll, .mywork .topimageroll, .modeling .topimageroll, .projects .topimageroll, .fullview .topimageroll {
         min-height: 300px;
         width: 100%;
         max-width: 100%;
@@ -334,7 +288,6 @@ button:hover {
 
 
 .journeyJS .topimageviewunderlay-transparent, .aboutMe .topimageviewunderlay-transparent {
-        //padding-top:100px;
 	height: 250px;
 	background-color: rgba(0,0,0,.75);
 }
@@ -385,29 +338,13 @@ button:hover {
 
 .journeyJS .topimageviewinnercontainer, .aboutMe .topimageviewinnercontainer, .contact .topimageviewinnercontainer {
         padding-top:95px;
-        padding-left:5%;
+        padding-left:8%;
         z-index: 3;
         position: relative;
 }
 
-/*
-.aboutMe .container-container {
-        width:90%;
-        margin-left:auto;
-        margin-right:auto;
-        max-width: none;
-}
-
-.journeyJS .container-container {
-        width:90%;
-        margin-left:auto;
-        margin-right:auto;
-        max-width: none;
-}
-*/
 
 .journeyJS .topinnercontainer, .contact .topinnercontainer {
-        //height: 55px;
 	-webkit-justify-content: flex-start;
         -ms-flex-pack: start;
         justify-content: flex-start;
@@ -444,7 +381,6 @@ button:hover {
 .contact .topinnercontainer-heading span {
 	color:#e8e8e8;
         font-family: Gotham SSm,sans-serif;
-        //font-size: 30px;
 }
 
 .contact .topinnercontainer-subheading span {
@@ -455,7 +391,6 @@ button:hover {
 }
 
 .contact .topinnercontainer-info {
-	//padding-top:25px;
 	position: absolute;
 	bottom:7%;
 	width:100%;
@@ -479,7 +414,6 @@ button:hover {
 .contact .topinnercontainer-info-subheading {
 	width:100%;
         height:100%;
-        //text-align:center;
 	display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
@@ -496,10 +430,6 @@ button:hover {
 }
 
 
-/*
-.journeyJS .topimageroll .topinnerbutton, .journeyJS .banner .topinnerbutton {
-        padding-top:6%;
-}*/
 
 
 .journeyJS .topimageroll .topinnerbutton {
@@ -507,20 +437,19 @@ button:hover {
 }
 
 .journeyJS .topinnerbutton .ui-btn {
-        //background-image: url(../images/newgreenbutton_tex1.jpg);
-	background-color: transparent;
+	background-color: #222;
         background-position: 50%;
         background-size: 100% 100%;
         background-repeat: no-repeat;
         border:none;
         color:#e8e8e8;
         font-size:.90em;
-	//width:12em;
-        //height:35px;
+	padding:20px 62px;
+}
 
-	padding:16px 32px;
-	
-
+.journeyJS .topinnerbutton.transparent .ui-btn {
+	background-color: transparent;
+        padding: 16px 60px;
 }
 
 .journeyJS .banner .topinnerbutton .ui-btn {
@@ -532,7 +461,6 @@ button:hover {
 	-webkit-box-shadow: 0 8px 10px rgba(0,0,0,.55);
         box-shadow: 0 8px 10px rgba(0,0,0,.55);
 
-        //box-shadow: 10px 10px 5px rgba(0,0,0,.55);
 }
 
 .journeyJS .banner .topinnerbutton .ui-shadow {
@@ -569,11 +497,9 @@ button:hover {
 	bottom: 5vh;
 	left: 20px;
 	display: inline-block;
-	//cursor: pointer;
 	z-index: 3;
 	box-sizing: border-box;
-	transition: all .2s ease;	
-	//border:1px solid green;	
+	transition: all .2s ease;		
 	width:100%;
 }
 
@@ -598,9 +524,7 @@ button:hover {
 
 
 .journeyJS .topmenucontainer {
-        //text-align:center;
         padding: 2.5vh 0%;
-        //border:1px solid green;
         height:10vh;
         position:relative;
         z-index:1;
@@ -613,7 +537,7 @@ button:hover {
 }
 
 
-.aboutMe .topimageroll-carousel-images, .template .topimageroll-carousel-images, .modeling .topimageroll-carousel-images, .projects .topimageroll-carousel-images, .fullview .topimageroll-carousel-images {
+.aboutMe .topimageroll-carousel-images, .mywork .topimageroll-carousel-images, .modeling .topimageroll-carousel-images, .projects .topimageroll-carousel-images, .fullview .topimageroll-carousel-images {
         background-color: #1c1c1c !important;
         height: 100%;
         background-size: cover;
@@ -622,12 +546,12 @@ button:hover {
         position: static;
 }
 
-.aboutMe .topimageroll-images, .template .topimageroll-images, .modeling .topimageroll-images, .projects .topimageroll-images, .fullview .topimageroll-images {
+.aboutMe .topimageroll-images, .mywork .topimageroll-images, .modeling .topimageroll-images, .projects .topimageroll-images, .fullview .topimageroll-images {
        
         background-color: #e2e2e2;
 }
 
-.aboutMe .topimageroll-image,  .template .topimageroll-image, .modeling .topimageroll-image, .projects .topimageroll-image, .fullview .topimageroll-image {
+.aboutMe .topimageroll-image,  .mywork .topimageroll-image, .modeling .topimageroll-image, .projects .topimageroll-image, .fullview .topimageroll-image {
         z-index: 1;
         opacity: 0;
         background-size: cover;
@@ -640,13 +564,13 @@ button:hover {
         left: 0;
         overflow-x: hidden;
         overflow-y: hidden;
-        //transition: opacity 1s cubic-bezier(.694,.0482,.335,1),z-index 0ms linear 1s;
 }
 
-.aboutMe .topimageroll-image.about, .template .topimageroll-image.about, .modeling .topimageroll-image.about, .projects .topimageroll-image.about, .fullview .topimageroll-image.about {
+.aboutMe .topimageroll-image.about, .mywork .topimageroll-image.about, .modeling .topimageroll-image.about, .projects .topimageroll-image.about, .fullview .topimageroll-image.about {
         background-image: url(../images/websiteimage_home1.jpg);
 }
 
+/*
 .aboutMe .topimageroll-image.template, .template .topimageroll-image.template, .modeling .topimageroll-image.template, .projects .topimageroll-image.template, .fullview .topimageroll-image.template {
         background-image: url(myportfolioimages/backgroundtexture_new_use_overlay.jpg);
 }
@@ -658,18 +582,18 @@ button:hover {
 
 .aboutMe .topimageroll-image.projects, .template .topimageroll-image.projects, .modeling .topimageroll-image.projects, .projects .topimageroll-image.projects, .fullview .topimageroll-image.projects {
         background-image: url(myportfolioimages/backgroundtexture_new_use_overlay.jpg);
-}
+}*/
 
-.aboutMe .topimageroll-image.is-loaded, .template .topimageroll-image.is-loaded, .modeling .topimageroll-image.is-loaded, .projects .topimageroll-image.is-loaded, .fullview .topimageroll-image.is-loaded {
+.aboutMe .topimageroll-image.is-loaded, .mywork .topimageroll-image.is-loaded, .modeling .topimageroll-image.is-loaded, .projects .topimageroll-image.is-loaded, .fullview .topimageroll-image.is-loaded {
         transition: opacity .3s cubic-bezier(.694,.0482,.335,1);
         transition-delay: 0;
 }
 
-.aboutMe .topimageroll-image.is-active, .template .topimageroll-image.is-active, .modeling .topimageroll-image.is-active, .projects .topimageroll-image.is-active, .fullview .topimageroll-image.is-active {
+.aboutMe .topimageroll-image.is-active, .mywork .topimageroll-image.is-active, .modeling .topimageroll-image.is-active, .projects .topimageroll-image.is-active, .fullview .topimageroll-image.is-active {
         opacity: 1;
 }
 
-.aboutMe .topimageroll-carousel-content, .template .topimageroll-carousel-content, .modeling .topimageroll-carousel-content, .projects .topimageroll-carousel-content, .fullview .topimageroll-carousel-content {
+.aboutMe .topimageroll-carousel-content, .mywork .topimageroll-carousel-content, .modeling .topimageroll-carousel-content, .projects .topimageroll-carousel-content, .fullview .topimageroll-carousel-content {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -680,12 +604,12 @@ button:hover {
         height: 100%;
 }
 
-.aboutMe .copy-carousel, .template .copy-carousel, .modeling .copy-carousel, .projects .copy-carousel, .fullview .copy-carousel {
+.aboutMe .copy-carousel, .mywork .copy-carousel, .modeling .copy-carousel, .projects .copy-carousel, .fullview .copy-carousel {
         width: 100%;
         height: 100%;
 }
 
-.aboutMe .copy-carousel-slides, .template .copy-carousel-slides, .modeling .copy-carousel-slides, .projects .copy-carousel-slides, .fullview .copy-carousel-slides {
+.aboutMe .copy-carousel-slides, .mywork .copy-carousel-slides, .modeling .copy-carousel-slides, .projects .copy-carousel-slides, .fullview .copy-carousel-slides {
         overflow-y: hidden;
         list-style: none;
         margin: 0;
@@ -695,7 +619,7 @@ button:hover {
         display: table;
 }
 
-.aboutMe .copy-carousel-slide, .template .copy-carousel-slide, .modeling .copy-carousel-slide, .projects .copy-carousel-slide, .fullview .copy-carousel-slide {
+.aboutMe .copy-carousel-slide, .mywork .copy-carousel-slide, .modeling .copy-carousel-slide, .projects .copy-carousel-slide, .fullview .copy-carousel-slide {
         display: table-cell;
         vertical-align: middle;
         padding-top: 44px;
@@ -704,7 +628,7 @@ button:hover {
 }
 
 
-.aboutMe .topimageroll .carousel-slide-layout, .template .topimageroll .carousel-slide-layout, .modeling .topimageroll .carousel-slide-layout, .projects .topimageroll .carousel-slide-layout, .fullview .topimageroll .carousel-slide-layout {
+.aboutMe .topimageroll .carousel-slide-layout, .mywork .topimageroll .carousel-slide-layout, .modeling .topimageroll .carousel-slide-layout, .projects .topimageroll .carousel-slide-layout, .fullview .topimageroll .carousel-slide-layout {
         margin-top: -12px;
         padding: 0;
         margin: auto;
@@ -713,27 +637,27 @@ button:hover {
         
 }
 
-.aboutMe .topimageroll .carousel-slide-layout > .carousel-slide-row, .template .topimageroll .carousel-slide-layout > .carousel-slide-row, .modeling .topimageroll .carousel-slide-layout > .carousel-slide-row, .projects .topimageroll .carousel-slide-layout > .carousel-slide-row, .fullview .topimageroll .carousel-slide-layout > .carousel-slide-row {
+.aboutMe .topimageroll .carousel-slide-layout > .carousel-slide-row, .mywork .topimageroll .carousel-slide-layout > .carousel-slide-row, .modeling .topimageroll .carousel-slide-layout > .carousel-slide-row, .projects .topimageroll .carousel-slide-layout > .carousel-slide-row, .fullview .topimageroll .carousel-slide-layout > .carousel-slide-row {
         padding: 0 15%;
 }
 
 
-.aboutMe .carousel-slide-layout > .carousel-slide-row, .template .carousel-slide-layout > .carousel-slide-row, .modeling .carousel-slide-layout > .carousel-slide-row, .projects .carousel-slide-layout > .carousel-slide-row, .fullview .carousel-slide-layout > .carousel-slide-row {
+.aboutMe .carousel-slide-layout > .carousel-slide-row, .mywork .carousel-slide-layout > .carousel-slide-row, .modeling .carousel-slide-layout > .carousel-slide-row, .projects .carousel-slide-layout > .carousel-slide-row, .fullview .carousel-slide-layout > .carousel-slide-row {
         margin-left: -17px;
         margin-right: -17px;
 }
 
 
-.aboutMe .carousel-slide-row, .template .carousel-slide-row, .modeling .carousel-slide-row, .projects .carousel-slide-row, .fullview .carousel-slide-row {
+.aboutMe .carousel-slide-row, .mywork .carousel-slide-row, .modeling .carousel-slide-row, .projects .carousel-slide-row, .fullview .carousel-slide-row {
         
         width: auto !important;
 }
 
-.aboutMe .carousel-slide-col-12, .template .carousel-slide-col-12, .modeling .carousel-slide-col-12, .projects .carousel-slide-col-12, .fullview .carousel-slide-col-12 {
+.aboutMe .carousel-slide-col-12, .mywork .carousel-slide-col-12, .modeling .carousel-slide-col-12, .projects .carousel-slide-col-12, .fullview .carousel-slide-col-12 {
         width: 100%;
 }
 
-.aboutMe .carousel-slide-block, .template .carousel-slide-block, .modeling .carousel-slide-block, .projects .carousel-slide-block, .fullview .carousel-slide-block {
+.aboutMe .carousel-slide-block, .mywork .carousel-slide-block, .modeling .carousel-slide-block, .projects .carousel-slide-block, .fullview .carousel-slide-block {
         position: relative;
         height: auto;
         padding-top: 17px;
@@ -746,32 +670,36 @@ button:hover {
         transition: box-shadow .2s ease-in-out;
 }
 
-.aboutMe .html-block, .template .html-block, .modeling .html-block, .projects .html-block, .fullview .html-block {
+.aboutMe .html-block, .mywork .html-block, .modeling .html-block, .projects .html-block, .fullview .html-block {
         clear: none;
 }
 
-.aboutMe .carousel-block-html, .template .carousel-block-html, .modeling .carousel-block-html, .projects .carousel-block-html, .fullview .carousel-block-html {
+.aboutMe .carousel-block-html, .mywork .carousel-block-html, .modeling .carousel-block-html, .projects .carousel-block-html, .fullview .carousel-block-html {
         padding: 0;
 }
 
-.aboutMe .carousel-slide-block-content, .template .carousel-slide-block-content, .modeling .carousel-slide-block-content, .projects .carousel-slide-block-content, .fullview .carousel-slide-block-content {
+.aboutMe .carousel-slide-block-content, .mywork .carousel-slide-block-content, .modeling .carousel-slide-block-content, .projects .carousel-slide-block-content, .fullview .carousel-slide-block-content {
         cursor: auto;
         outline: none;
         text-align: left;
-        text-transform: uppercase;
+        color: #fff;
+        /*text-transform: uppercase;*/
 }
 
-.aboutMe .carousel-slide-block-content-inner, .template .carousel-slide-block-content-inner, .modeling .carousel-slide-block-content-inner, .projects .carousel-slide-block-content-inner, .fullview .carousel-slide-block-content-inner {
+.aboutMe .carousel-slide-block-content-inner, .mywork .carousel-slide-block-content-inner, .modeling .carousel-slide-block-content-inner, .projects .carousel-slide-block-content-inner, .fullview .carousel-slide-block-content-inner {
         text-align: left;
-        text-transform: uppercase;
+        /*text-transform: uppercase;*/
         line-height: 1.15em;
         letter-spacing: .08em;
         margin: .2em auto;
 }
 
-.aboutMe .carousel-slide-block-content-inner span, .template .carousel-slide-block-content-inner span, .modeling .carousel-slide-block-content-inner span, .projects .carousel-slide-block-content-inner span, .fullview .carousel-slide-block-content-inner span {
+.aboutMe .carousel-slide-block-content-inner h4, .mywork .carousel-slide-block-content-inner h4,  .fullview .carousel-slide-block-content-inner h4 {
+        margin-top: 10px;
+}
+
+.aboutMe .carousel-slide-block-content-inner span, .mywork .carousel-slide-block-content-inner span, .modeling .carousel-slide-block-content-inner span, .projects .carousel-slide-block-content-inner span, .fullview .carousel-slide-block-content-inner span {
         font-family: Gotham,sans-serif;
-        //font-size: 43px;
         font-size: 26px;
         font-weight: 500;
         color: #fff;
@@ -786,6 +714,7 @@ button:hover {
 	position:relative;
 	z-index:10;
 	background-color:#fff;
+        border-bottom: 1px solid #aaa;
 }
 
 
@@ -808,6 +737,24 @@ button:hover {
         position: relative;
         z-index: 10;
         margin-top: 0;
+        background-color: #ffffff;
+}
+
+.account-navigation.is-active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 10vh;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        box-shadow: 0px 0px 0px 2px rgba(24, 29, 32, 0.2);
 }
 
 .account-navigation .toggle-left-nav {
@@ -824,6 +771,10 @@ button:hover {
     right: 5px;
     top: 0;
     z-index: 5;
+}
+
+.account-navigation .toggle-left-nav, .atc-navigation .toggle-left-nav {
+    display: none;
 }
 
 .account-navigation .toggle-left-nav span {
@@ -865,16 +816,22 @@ button:hover {
 
 .account-navigation .side-nav ul li {
     display: inline-block;
-    margin: 0 5px 5px 0;
+    /*margin: 0 5px 5px 0;*/
+    margin: 0 20px 0px 0;
 }
 
-.account-navigation .side-nav ul a {
+.sideNav-button a {
     color: #333;
-    //padding: 5px;
 }
 
+.sideNav-button.is-active {
+        color: #ccc;
+}
 
-
+.account-content-container.is-active {
+        display:flex;
+        justify-content: end;
+}
 
 .account-content {
     min-height: 1px;
@@ -958,11 +915,11 @@ button:hover {
 
 .directContact {
 	margin-top:100px;
-	//margin-bottom:20px;
+	
 }
 
 .contactinfo {
-	//color:#222;
+	
 }
 
 .businessname span {
@@ -1076,12 +1033,29 @@ button:hover {
 
 
 
-@media screen and (min-width: 776px) {
+@media screen and (min-width: 768px) {
 
-	.account-navigation {margin-top: 15px;}
+	.account-navigation {margin-top: 15px; height: 100vh; border-right: 1px solid #ddd;}
+        .account-navigation.is-active { width: 31%; }
+        .account-navigation.is-active {
+                position: fixed;
+                top: 0;
+                left: initial;
+                height: 100%;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-justify-content: initial;
+                -ms-flex-pack: inherit;
+                justify-content: inherit;
+                -webkit-align-items: initial;
+                -ms-flex-align: initial;
+                align-items: initial;
+                box-shadow: none;
+        }
         .account-navigation .toggle-left-nav, .atc-navigation .toggle-left-nav {display: none;}
-        .account-navigation .side-nav ul li {display: block;font-size: 18px;}
-        .account-navigation .side-nav ul li a {background: none;color: #333;padding-bottom: 0;padding-top: 0;
+        .account-navigation .side-nav ul li {display: block;font-size: 18px; margin: 0 5px 5px 0; }
+        .account-navigation .side-nav ul li a {background: none;padding-bottom: 0;padding-top: 0;
 	}
 
 
@@ -1093,7 +1067,7 @@ button:hover {
 	.journeyJS .topimageroll .topinnerbutton {margin-top:75px;}
 	.journeyJS .topmenurolldesk span {font-size:1.00em;}
 	.template .topimageroll .carousel-slide-layout {max-width: 768px;margin-top: -14px;}
-        .aboutMe .topimageroll .carousel-slide-layout > .carousel-slide-row, .template .topimageroll .carousel-slide-layout > .carousel-slide-row, .projects .topimageroll .carousel-slide-layout > .carousel-slide-row, .fullview .topimageroll .carousel-slide-layout > .carousel-slide-row {padding: 0 6%;}
+        .aboutMe .topimageroll .carousel-slide-layout > .carousel-slide-row, .mywork .topimageroll .carousel-slide-layout > .carousel-slide-row, .projects .topimageroll .carousel-slide-layout > .carousel-slide-row, .fullview .topimageroll .carousel-slide-layout > .carousel-slide-row {padding: 0 6%;}
         .template .carousel-slide-block-content-inner {margin-bottom: 15px}
         //.aboutMe .carousel-slide-block-content-inner span, .template .carousel-slide-block-content-inner span, .projects .carousel-slide-block-content-inner span {font-family: Gotham,sans-serif;font-size: 43px;}
 }
@@ -1101,25 +1075,24 @@ button:hover {
 
 @media screen and (min-width: 990px) {
 	.journeyJS .topinnercontainercontent {height:200px;}       
-
+        .account-navigation.is-active { width: 23%; }
 	.aboutMe .topimageviewunderlay-inner {padding-top:183px;}
 	.aboutMe .topimageviewoverlay-img {margin-left:70%;}
 
 	.contact .topinnercontainer-info-inner {width:300px;}
 
-	.journeyJS .topimageroll .topinnerbutton {margin-top:100px;}
-	//.aboutMe .topimageroll, .template .topimageroll, .projects .topimageroll {min-height: 425px;}
-        .aboutMe .topimageroll .carousel-slide-layout, .template .topimageroll .carousel-slide-layout, .projects .topimageroll .carousel-slide-layout, .fullview .topimageroll .carousel-slide-layout {max-width: 1024px;}
-	.aboutMe .topimageroll .carousel-slide-layout {margin-top: -14px;}
-        .aboutMe .topimageroll .carousel-slide-layout > .carousel-slide-row, .template .topimageroll .carousel-slide-layout > .carousel-slide-row, .projects .topimageroll .carousel-slide-layout > .carousel-slide-row, .fulliew .topimageroll .carousel-slide-layout > .carousel-slide-row {padding: 0 9%;}
+	.journeyJS .topimageroll .topinnerbutton {margin-top:50px;}
+        .aboutMe .topimageroll .carousel-slide-layout, .mywork .topimageroll .carousel-slide-layout, .projects .topimageroll .carousel-slide-layout, .fullview .topimageroll .carousel-slide-layout {max-width: 1024px;}
+	.aboutMe .topimageroll .carousel-slide-layout, .mywork .topimageroll .carousel-slide-layout, .fullview .topimageroll .carousel-slide-layout {margin-top: -14px;}
+        .aboutMe .topimageroll .carousel-slide-layout > .carousel-slide-row, .mywork .topimageroll .carousel-slide-layout > .carousel-slide-row, .projects .topimageroll .carousel-slide-layout > .carousel-slide-row, .fullview .topimageroll .carousel-slide-layout > .carousel-slide-row {padding: 0 9%;}
 
-	.aboutMe .carousel-slide-block-content-inner, .template .carousel-slide-block-content-inner, .contact .carousel-slide-block-content-inner, .modeling .carousel-slide-block-content-inner, .projects .carousel-slide-block-content-inner, .fullview .carousel-slide-block-content-inner {margin-bottom: 15px}
+	.aboutMe .carousel-slide-block-content-inner, .mywork .carousel-slide-block-content-inner, .contact .carousel-slide-block-content-inner, .modeling .carousel-slide-block-content-inner, .projects .carousel-slide-block-content-inner, .fullview .carousel-slide-block-content-inner {margin-bottom: 15px}
 }
 
 
 
 @media screen and (min-width: 1281px) {
-        .aboutMe .topimageroll .carousel-slide-layout, .template .topimageroll .carousel-slide-layout, .projects .topimageroll .carousel-slide-layout, .fullview .topimageroll .carousel-slide-layout {max-width: 1281px;}
+        .aboutMe .topimageroll .carousel-slide-layout, .mywork .topimageroll .carousel-slide-layout, .projects .topimageroll .carousel-slide-layout, .fullview .topimageroll .carousel-slide-layout {max-width: 1281px;}
 }
 
 
@@ -1166,4 +1139,54 @@ a {
 .row {
         margin-right: 0;
         margin-left: 0;
+}
+
+
+
+
+/**
+*
+*
+* Upload Button (for mobile)
+*
+*
+*/
+
+.bottom-menu {
+	position:fixed;
+	right: 20px;
+	bottom: 10%;
+	--ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	z-index: 8000;
+	display:none;
+}
+
+.bottom-menu.is-active {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+
+.bottom-menu-button {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	--ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	position: relative;
+  	overflow: hidden;
+}
+
+.bottom-menu-button span {
+        font: 14px;
+}
+
+.bottom-menu-button img {
+	width: 60px;
+	height: 60px;
+        margin: 0px 5px;
 }
