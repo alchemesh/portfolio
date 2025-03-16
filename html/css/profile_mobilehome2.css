@@ -197,6 +197,10 @@
 	text-align: center;
 }
 
+.descript-portfolio p span {
+	font-size: 16px;
+}
+
 .journeyJS .blueprint {
 	
 	position: relative;
