@@ -156,7 +156,7 @@
     display: flex;
     -webkit-justify-content: start;
     -ms-flex-pack: justify;
-	justify-content: start;
+	justify-content: center;
 	align-items: center;
 	z-index: 100; 
 	position: absolute;
@@ -164,7 +164,7 @@
 }
 
 .descript-portfolio-inner {
-	padding-top:10vh;
+	/*padding-top:10vh;*/
 	display: -webkit-flex;
     display: -ms-flexbox;
 	display: flex;
@@ -172,7 +172,8 @@
     -ms-flex-pack: justify;
 	justify-content: right;
 	flex-direction: column;
-	padding-right:22vw;
+	align-items: center;
+	/*padding-right:22vw;*/
 }
 
 .descript-portfolio span {
@@ -2068,6 +2069,7 @@ input.big[type="submit"], input.big[type="reset"], input.big[type="button"], but
 		box-shadow: 2px 2px 10px rgba(0, 0, 0, .30);
 		width: 80%;
 		margin: auto;
+		overflow: hidden;
 	}
 
 	.journeyJS .skills-images { 

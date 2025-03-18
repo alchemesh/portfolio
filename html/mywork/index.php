@@ -60,64 +60,63 @@
 
 		
 		<div class="mywork">
-
 			<div class="topimageroll">
 				<div class="topimageroll-carousel-images topimageroll-images">
 					<div class="topimageroll-image about is-loaded is-active">
-                                        </div>
+                    </div>
 					<div class="topimageroll-image template is-loaded ">
-                        		</div>
+                    </div>
 					<div class="topimageroll-image modeling is-loaded ">
-                                	</div>
+                    </div>
 					<div class="topimageroll-image projects is-loaded">
-                                	</div>
-                		</div>
+					</div>
+				</div>
 
 				<div class="topimageroll-carousel-content">
 					<div class="copy-carousel">
 						<ul class="copy-carousel-slides">
 							<li >
 								<div class="topimageviewunderlay">
-                                                        		<div class="topimageviewunderlay-inner">
-                                                                		
-                                                        		</div>
-                                                		</div>
+									<div class="topimageviewunderlay-inner">
+											
+									</div>
+								</div>
 							</li>
 						
 							<li>
 								<div class="topimageviewoverlay" >
-                                                      	  		<div class="topimageviewoverlay-inner">
-                                                                		<div class="topimageviewoverlay-img">
-                                                                        		
-                                                                		</div>
-                                                        		</div>
-                                                		</div>
+									<div class="topimageviewoverlay-inner">
+										<div class="topimageviewoverlay-img">
+												
+										</div>
+									</div>
+								</div>
 							</li>
 
-                                                        <li class="copy-carousel-slide services ">
+                            <li class="copy-carousel-slide services ">
 								<div class="carousel-slide-layout">
 									<div class="carousel-slide-row row">
 										<div class="carousel-slide-col-12 col">
 											<div class="carousel-slide-block html-block carousel-block-html">
 												<div class="carousel-slide-block-content">
 													<div class="carousel-slide-block-content-inner">
-                                                                                                                <h1>Jorrell Smith</h1>
-                                                                                                                <h4>DevOps Engineer</h4>
-                                                                                                        </div>
+														<h1>Jorrell Smith</h1>
+														<h4>DevOps Engineer</h4>
+													</div>
 												</div>
 											</div>
 
 										 	<div class="carousel-slide-row row">
-                                                                                        	<div>
-                                                                                                	<span></span>
-                                                                                        	</div>
-                                                                                	</div>
+												<div>
+													<span></span>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
 							</li>
-                                		</ul>
-                        		</div>
+                        </ul>
+                    </div>
 				</div>
 			
 				<ol class="topimageroll-carousel-indicator">
@@ -125,26 +124,25 @@
 			</div>
 
 			<div class="toprollmenu">
-                                <div class="jorrellS-container-container">
-                                        <div class="jorrellS-row">
-                                                <div class="jorrellS-col">
-                                                        <div style="text-align:center;padding:1.5vh 1.5%;height:7vh;position:relative:z-index:1;overflow-x:auto;">
+				<div class="jorrellS-container-container">
+					<div class="jorrellS-row">
+						<div class="jorrellS-col">
+							<div class="toprollmenu-container">
 
-                                                                <div style="display:inline-block;padding: 0% 2%;"><a href="/" ><span style="font-size:9px;font-weight:600;color:#222;">Home</span></a></div>
+								<div style="display:inline-block;padding: 0% 2%;"><a href="/" ><span style="font-size:9px;font-weight:600;color:#222;">Home</span></a></div>
 
-                                                                <div style="display:inline-block;padding: 0% 2%;"><a href="/mywork/"><span style="font-size:9px;font-weight:600;color:#222;">My Work</span></a></div>
+								<div style="display:inline-block;padding: 0% 2%;"><a href="/mywork/"><span style="font-size:9px;font-weight:600;color:#222;">My Work</span></a></div>
 
-                                                                <div style="display:inline-block;padding: 0% 2%;"><a href="/aboutme/"><span style="font-size:9px;font-weight:600;color:#222;">About Me</span></a></div>
+								<div style="display:inline-block;padding: 0% 2%;"><a href="/aboutme/"><span style="font-size:9px;font-weight:600;color:#222;">About Me</span></a></div>
 
+							</div>                                                       
+						</div>
 
-                                                        </div>                                                       
-                                                </div>
-
-                                                <div class="jorrellS-col medium-6">
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
+						<div class="jorrellS-col medium-6">
+						</div>
+					</div>
+				</div>
+			</div>
 
 
 
@@ -403,8 +401,8 @@
                 <div class="footer-bottom-begin" ></div>
 				<div class="container-wrap">
                     <div class="jorrellS-row">
-                        <p class="jorrellS-float-left">Copyright © 2024 Jorrell Smith. All rights reserved.</p>
-                        <p class="jorrellS-float-right">Designed by <span><a target="_blank" href="http://www.jorrellsmith.com">jorrellsmith.com</a></span></p>
+                        <p class="jorrellS-col">Copyright © 2024 Jorrell Smith. All rights reserved.</p>
+                        <p class="jorrellS-col">Designed by <span><a target="_blank" href="http://www.jorrellsmith.com">jorrellsmith.com</a></span></p>
                     </div>
                 </div>
             </div>

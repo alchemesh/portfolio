@@ -75,25 +75,32 @@
 									<div>
 										<h1>Jorrell Smith</h1>
 										<h4 style="margin-top: 10px;">DevOps Engineer</h4>
-										<span>Continuous deployment through continuous integration with improved </span><br>
-										<span style="display:block;">standards and practices.Take a walk with me.</span>
-										<div class="bannerbutton" style="float:left;">
-											<div class="bannertext">
-												<div class="topinnerbutton"><a href="/mywork/" class="ui-btn ui-btn-inline ui-shadow">My Work</a>
-												</div>
-											</div>
-										</div>
-										<div class="bannerbutton" style="float:left;padding-left:2px;">
-											<div class="bannertext">
-												<div class="topinnerbutton transparent"><a href="/aboutme/" class="ui-btn ui-btn-inline ui-shadow" style="border:4px solid #222;">About Me</a>
-												</div>
-											</div>
-										</div>
+										<span style="width:60%;">Continuous deployment through continuous integration with improved standards and practices.Take a walk with me.</span>
+										<!--<span style="display:block;">standards and practices.Take a walk with me.</span>-->
 									</div>
 								</div>
                             </div>								
                         </div>							
-					</div>					
+					</div>
+					
+					<div class="topimageviewnav" >
+						<div class="jorrellS-container-container">
+							<div class="jorrellS-row topimageviewnav-container">
+								<div class="bannerbutton">
+									<div class="bannertext">
+										<div class="topinnerbutton"><a href="/mywork/" class="ui-btn ui-btn-inline ui-shadow">My Work</a>
+										</div>
+									</div>
+								</div>
+								<div class="bannerbutton" style=";padding-left:2px;">
+									<div class="bannertext">
+										<div class="topinnerbutton transparent"><a href="/aboutme/" class="ui-btn ui-btn-inline ui-shadow" style="border:4px solid #222;">About Me</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
                 </div>
 
 				
@@ -119,7 +126,7 @@
 				<div class="jorrellS-container-container">
 					<div class="jorrellS-row">
 						<div class="jorrellS-col">
-                            <div style="text-align:center;padding:1.5vh 1.5%;height:7vh;position:relative:z-index:1;overflow-x:auto;">
+                            <div class="toprollmenu-container">
 
 								<div style="display:inline-block;padding: 0% 2%;"><a href="/"><span style="font-size:10px;font-weight:600;color:#222;">Home</span></a></div>
 								<div style="display:inline-block;padding: 0% 2%;"><a href="/mywork/" ><span style="font-size:10px;font-weight:600;color:#222;">My Work</span></a></div>
@@ -370,8 +377,8 @@
                 <div class="footer-bottom-begin" ></div>
 				<div class="container-wrap">
                     <div class="jorrellS-row">
-                        <p class="jorrellS-float-left">Copyright © 2024 Jorrell Smith. All rights reserved.</p>
-                        <p class="jorrellS-float-right">Designed by <span><a target="_blank" href="http://www.jorrellsmith.com">jorrellsmith.com</a></span></p>
+                        <p class="jorrellS-col">Copyright © 2024 Jorrell Smith. All rights reserved.</p>
+                        <p class="jorrellS-col">Designed by <span><a target="_blank" href="http://www.jorrellsmith.com">jorrellsmith.com</a></span></p>
                     </div>
                 </div>
             </div>

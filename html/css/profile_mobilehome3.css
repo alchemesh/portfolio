@@ -364,8 +364,8 @@
 }
 
 .footer .footer-widget .container {
-        border-top: 1px solid #888;
-        padding-top: 25px;
+    border-top: 1px solid #888;
+    padding-top: 25px;
 }
 
 
@@ -373,8 +373,9 @@
     color: #363432;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    margin-left: 15px;
-        font-size:13px;
+    /*margin-left: 15px;*/
+    font-size:13px;
+	text-align: center;
 }
 
 .footer .footer-bottom p span a {
