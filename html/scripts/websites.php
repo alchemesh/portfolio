@@ -4,7 +4,7 @@
 		$templateArray = array();
 		
 		
-        $result=mysqli_query(@mysqli_connect("mysql", "webserver", "poppey360!virgil", "RareAlchemyTemplates"), "select * from rarealchemy_projects") or die("select * from rarealchemy_projects"."<br/><br/>".mysqli_error());
+        $result=mysqli_query(@mysqli_connect(), "select * from rarealchemy_projects") or die("select * from rarealchemy_projects"."<br/><br/>".mysqli_error());
 
 		
 		
@@ -30,7 +30,7 @@
 		$websitesArray = array();		
 
 		
-		$result=mysqli_query(mysqli_connect("mysql","webserver","poppey360!virgil","Portfolio"), "select * from portfolio_websites ") or die("select * from portfolio_websites"."<br/><br/>".mysqli_error());
+		$result=mysqli_query(mysqli_connect(), "select * from portfolio_websites ") or die("select * from portfolio_websites"."<br/><br/>".mysqli_error());
 
 
 		while($row=mysqli_fetch_array($result)) {
