@@ -6,7 +6,7 @@
 
 
 
-                $result=mysqli_query(mysqli_connect(),"select * from {$table} where Website_ID = '{$serial}' ") or die("select * from '{$table}'"."<br/><br/>".mysqli_error());
+                $result=mysqli_query(mysqli_connect("mysql", "webserver", "poppey360!virgil", "Portfolio"),"select * from {$table} where Website_ID = '{$serial}' ") or die("select * from '{$table}'"."<br/><br/>".mysqli_error());
 
                 while($row=mysqli_fetch_array($result))
                 {

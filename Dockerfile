@@ -21,11 +21,14 @@ RUN apt-get update && apt-get install -y \
 	php-mcrypt \
 	php-mysql \
 	php-curl \
+	openssl \
+	libapache2-mod-security2 \
 	--no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 
 
 COPY /html /var/www/html
+RUN rm /var/www/html/index.html
 EXPOSE 80 443
 
 
