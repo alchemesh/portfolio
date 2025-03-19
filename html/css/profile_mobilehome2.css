@@ -1097,7 +1097,16 @@ svg:not(:root) {
 
 
 @media screen and (min-width: 768px) {
-	.journeyJS .blueprint-subheading{margin-bottom: 80px;}               
+	.journeyJS .blueprint-subheading{margin-bottom: 80px;}
+	.descript-portfolio, .descript-portfolio-inner {
+		width: 100%;
+		-webkit-justify-content: start;
+		-ms-flex-pack: justify;
+		justify-content: flex-start;
+		align-items: initial;
+	}           
+
+	.descript-portfolio-inner { padding-top:10vh;}
 
 	.descript-portfolio span { text-align: left; }
 	.descript-portfolio h1 { text-align: left; }
@@ -1283,7 +1292,7 @@ svg:not(:root) {
 	.template .template-grid .device.laptop .device-hardware, .projects .template-grid .device.laptop .device-hardware {height: 511px;}
 	.template .template-grid .device.monitor .device-hardware, .projects .template-grid .device.monitor .device-hardware {height: 462px;}
 	.descript-portfolio { -webkit-justify-content: right; -ms-flex-pack: justify; justify-content: right; }
-	.descript-portfolio-inner { width: 60vw; }
+	.descript-portfolio-inner { width: 60vw; padding-right:22vw;}
 	.descript-portfolio p { width: auto; }
 	.descript-tidbits {opacity: 1; visibility: visible;}
 }

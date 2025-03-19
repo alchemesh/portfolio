@@ -385,6 +385,11 @@ button:hover {
 	
 }
 
+.portfolio-info-text {
+        width: 100%;
+        display: block;
+}
+
 .journeyJS .topinnercontainerimg {
 	height:100%;
 }
@@ -1077,8 +1082,10 @@ button:hover {
 	.aboutMe .topimageviewoverlay-inner {padding-top:80px;}
 	.aboutMe .topimageviewoverlay-img {width:280px;height:740px;margin-left:55%;}
 
-	.journeyJS .topimageroll .topinnerbutton {margin-top:35px;}
+	/*.journeyJS .topimageroll .topinnerbutton {margin-top:35px;}*/
+        .journeyJS .topimageroll .bannerbutton:nth-child(2) { padding-left: 2px; }
         .topimageviewnav-container { flex-direction: row;}
+        .portfolio-info-text { width: 80%; }
         .journeyJS .topmenurolldesk span {font-size:.80em;}
 }
 
@@ -1090,6 +1097,7 @@ button:hover {
                 -ms-flex-pack: left;
                 justify-content: left;  
         }
+        .portfolio-info-text { width: 70%; }
 	.account-navigation {margin-top: 15px; height: 100vh; border-right: 1px solid #ddd;}
         .account-navigation.is-active { width: 31%; }
         .account-navigation.is-active {
@@ -1114,12 +1122,19 @@ button:hover {
 	}
 
 
-	.journeyJS .topinnercontainercontent {height:175px;}      
+	/*.journeyJS .topinnercontainercontent {height:175px;}*/
+        
+        .topimageviewnav {
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: 8%;
+        }
 	
 	
 	.aboutMe .topimageviewoverlay-img {width:310px;height:819px;margin-left:60%;}
 	
-	.journeyJS .topimageroll .topinnerbutton {margin-top:75px;}
+	/*.journeyJS .topimageroll .topinnerbutton {margin-top:75px;}*/
 	.journeyJS .topmenurolldesk span {font-size:1.00em;}
 	.template .topimageroll .carousel-slide-layout {max-width: 768px;margin-top: -14px;}
         .aboutMe .topimageroll .carousel-slide-layout > .carousel-slide-row, .mywork .topimageroll .carousel-slide-layout > .carousel-slide-row, .projects .topimageroll .carousel-slide-layout > .carousel-slide-row, .fullview .topimageroll .carousel-slide-layout > .carousel-slide-row {padding: 0 6%;}
@@ -1129,14 +1144,14 @@ button:hover {
 
 
 @media screen and (min-width: 990px) {
-	.journeyJS .topinnercontainercontent {height:200px;}       
+	/*.journeyJS .topinnercontainercontent {height:200px;}*/     
         .account-navigation.is-active { width: 23%; }
 	.aboutMe .topimageviewunderlay-inner {padding-top:183px;}
 	.aboutMe .topimageviewoverlay-img {margin-left:70%;}
 
 	.contact .topinnercontainer-info-inner {width:300px;}
 
-	.journeyJS .topimageroll .topinnerbutton {margin-top:50px;}
+	/*.journeyJS .topimageroll .topinnerbutton {margin-top:50px;}*/
         .aboutMe .topimageroll .carousel-slide-layout, .mywork .topimageroll .carousel-slide-layout, .projects .topimageroll .carousel-slide-layout, .fullview .topimageroll .carousel-slide-layout {max-width: 1024px;}
 	.aboutMe .topimageroll .carousel-slide-layout, .mywork .topimageroll .carousel-slide-layout, .fullview .topimageroll .carousel-slide-layout {margin-top: -14px;}
         .aboutMe .topimageroll .carousel-slide-layout > .carousel-slide-row, .mywork .topimageroll .carousel-slide-layout > .carousel-slide-row, .projects .topimageroll .carousel-slide-layout > .carousel-slide-row, .fullview .topimageroll .carousel-slide-layout > .carousel-slide-row {padding: 0 9%;}

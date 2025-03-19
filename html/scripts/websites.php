@@ -1,10 +1,11 @@
 <?php
-	
-	function getTemplates() {
+	include("/var/www/credentials.php");
+
+
+	function getTemplates($username, $password) {
 		$templateArray = array();
 		
-		
-        $result=mysqli_query(@mysqli_connect("mysql", "webserver", "poppey360!virgil", "RareAlchemyTemplates"), "select * from rarealchemy_projects") or die("select * from rarealchemy_projects"."<br/><br/>".mysqli_error());
+        $result=mysqli_query(@mysqli_connect("mysql", $username , $password , "RareAlchemyTemplates"), "select * from rarealchemy_projects") or die("select * from rarealchemy_projects"."<br/><br/>".mysqli_error());
 
 		
 		
@@ -25,12 +26,12 @@
 		 
 	}
 
-	function getWebsites() {
+	function getWebsites($username, $password) {
 		
 		$websitesArray = array();		
 
 		
-		$result=mysqli_query(mysqli_connect("mysql", "webserver", "poppey360!virgil", "Portfolio"), "select * from portfolio_websites ") or die("select * from portfolio_websites"."<br/><br/>".mysqli_error());
+		$result=mysqli_query(mysqli_connect("mysql", $username , $password , "Portfolio"), "select * from portfolio_websites ") or die("select * from portfolio_websites"."<br/><br/>".mysqli_error());
 
 
 		while($row=mysqli_fetch_array($result)) {
@@ -58,8 +59,8 @@
 	}
 
 	
-	$websiteArray = getWebsites();
-	$templateArray = getTemplates();
+	$websiteArray = getWebsites($username, $password);
+	$templateArray = getTemplates($username, $password);
 
 
 ?>

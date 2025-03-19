@@ -1,12 +1,12 @@
 <?php
-        
+        include("/var/www/credentials.php");
 
-        function getFullView($serial, $table) {
+        function getFullView($serial, $username , $password) {
 		$fullViewArray = array();
 
 
 
-                $result=mysqli_query(mysqli_connect("mysql", "webserver", "poppey360!virgil", "Portfolio"),"select * from {$table} where Website_ID = '{$serial}' ") or die("select * from '{$table}'"."<br/><br/>".mysqli_error());
+                $result=mysqli_query(mysqli_connect("mysql", $username , $password, "Portfolio"),"select * from portfolio_websites where Website_ID = '{$serial}' ") or die("select * from '{$table}'"."<br/><br/>".mysqli_error());
 
                 while($row=mysqli_fetch_array($result))
                 {
@@ -37,7 +37,7 @@
 
 
 	
-	list($fullViewArray) = getFullView($_REQUEST['s'], "portfolio_websites");
+	list($fullViewArray) = getFullView($_REQUEST['s'], $username , $password);
 
 
 	//$featuresArray = explode(": ", $fullViewArray['product_features']);

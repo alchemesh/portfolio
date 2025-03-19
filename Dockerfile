@@ -21,6 +21,7 @@ RUN apt-get update && apt-get install -y \
 	php-mcrypt \
 	php-mysql \
 	php-curl \
+	openssl \
 	--no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 
