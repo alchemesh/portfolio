@@ -6,6 +6,9 @@ jobs:
     first_job:
         runs-on: self-hosted
         steps:
+            - name: Checkout
+              uses: actions/checkout@v5
+              
             - name: Welcome message
               run: echo "Hello World!"
 
