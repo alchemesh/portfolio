@@ -39,7 +39,7 @@ jobs:
                   sleep 300s
                   curl http://localhost
                   sudo docker stop portfolio && sudo docker rm portfolio
-                  sudo docker stop mysql && sudo docker rm mysql
+                  sudo docker stop portfolio-mysql && sudo docker rm portfolio-mysql
 
             - name: Docker Push
               uses: docker/build-push-action@v4
