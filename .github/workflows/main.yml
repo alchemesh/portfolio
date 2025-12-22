@@ -36,7 +36,7 @@ jobs:
                       --link portfolio-mysql:portfolio-mysql \
                       ${{ vars.DOCKER_USERNAME }}/${{ vars.IMAGE_NAME }}:v1
 
-                  sleep 300s
+                  sleep 60s
                   curl http://localhost
                   sudo docker stop portfolio && sudo docker rm portfolio
                   sudo docker stop portfolio-mysql && sudo docker rm portfolio-mysql
