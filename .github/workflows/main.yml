@@ -29,7 +29,7 @@ jobs:
               run: |
                   docker run --name portfolio-mysql -itd \
                       -p 3306:3306 \
-                      --env=MYSQL_ROOT_PASSWORD=mypassword \
+                      --env=MYSQL_ROOT_PASSWORD=${{ vars.MYSQL_PASS}} \
                       ${{ vars.DOCKER_USERNAME }}/${{ vars.MYSQL_DB_NAME }}:latest
                   docker run --name portfolio -itd \
                       -p 80:80 \
