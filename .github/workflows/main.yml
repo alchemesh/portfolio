@@ -30,11 +30,11 @@ jobs:
                   docker run --name portfolio-mysql -itd \
                       -p 3306:3306 \
                       --env=MYSQL_ROOT_PASSWORD=${{ vars.MYSQL_PASS}} \
-                      ${{ vars.DOCKER_USERNAME }}/${{ vars.MYSQL_DB_NAME }}:latest
+                      ${{ vars.DOCKER_USERNAME }}/${{ vars.MYSQL_DB_NAME }}:v1
                   docker run --name portfolio -itd \
                       -p 80:80 \
                       --link portfolio-mysql:portfolio-mysql \
-                      ${{ vars.DOCKER_USERNAME }}/${{ vars.IMAGE_NAME }}:latest
+                      ${{ vars.DOCKER_USERNAME }}/${{ vars.IMAGE_NAME }}:v1
 
                   sleep 300s
                   curl http://localhost
