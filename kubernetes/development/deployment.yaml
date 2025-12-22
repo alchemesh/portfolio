@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: portfolio-deploy
+  labels:
+    name: portfolio-deploy
+    app: portfolio-app
+  namespace: _{_NAMESPACE_}_
+spec:
+  replicas: _{_REPLICAS_}_
+  selector:
+    matchLabels:
+      name: portfolio-pod
+      app: portfolio-app
+
+  template:
+    metadata:
+      name: portfolio-pod
+      labels:
+        name: portfolio-pod
+        app: portfolio-app
+    spec:
+      containers:
+        - name: portfolio-app
+          imagePullPolicy: Always
+          image: _{_IMAGE_}_
+          env:
+            - name: MYSQL_DB
+              value: portfolio-mysql-service
+            - name: MYSQL_USER
+              value: _{_MYSQL_USER_}_
+            - name: MYSQL_PASS
+              value: _{_MYSQL_PASS_}_
+          ports:
+            - containerPort: 8080
+              name: http

@@ -1,0 +1,17 @@
+services:
+  portfolio:
+    image: sabatiel180/my-portfolio # Get frontend application image
+    ports:
+      - "80:80" # Map host port 80 to container port 3000
+    environment:
+      MYSQL_DB: portfolio-mysql
+      MYSQL_USER: root
+      MYSQL_PASS: mypassword
+    depends_on:
+      - portfolio-mysql
+  portfolio-mysql:
+    image: sabatiel180/mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: mypassword
