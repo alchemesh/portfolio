@@ -30,7 +30,7 @@ COPY /html /var/www/html
 RUN rm /var/www/html/index.html
 EXPOSE 80 443
 
-
-ENTRYPOINT service apache2 restart && bash 
+CMD ["apache2ctl", "-D", "FOREGROUND"]
+#ENTRYPOINT service apache2 restart && bash 
 
 
